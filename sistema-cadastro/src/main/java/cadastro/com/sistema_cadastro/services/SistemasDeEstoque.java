@@ -25,5 +25,7 @@ public class SistemasDeEstoque {
         return produtos;
     }
 
-
+    public void atualizarEstoque(Produto produto, int quantidade) {
+        produto.setQuantidadeEmEstoque(quantidade);
+    }
 }

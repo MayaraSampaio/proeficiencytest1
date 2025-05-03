@@ -29,5 +29,18 @@ public class SistemaCadastroApplication implements CommandLineRunner {
 		System.out.println("Lista de produtos:");
 		sistemasDeEstoque.listarProdutos();
 
+		System.out.println("Atualizando estoque do produto 1:");
+
+		System.out.println("Produto 1 antes da atualização:");
+		System.out.println("Nome: " + produto1.getName());
+		System.out.println("Quantidade em Estoque: " + produto1.getQuantidadeEmEstoque());
+
+		sistemasDeEstoque.atualizarEstoque(produto1, 15);
+		System.out.println("Produto 1 atualizado:");
+		System.out.println("Nome: " + produto1.getName());
+		System.out.println("Quantidade em Estoque: " + produto1.getQuantidadeEmEstoque());
+
+
+
 	}
 }
